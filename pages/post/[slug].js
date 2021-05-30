@@ -20,7 +20,7 @@ export const Post = ({ title, body, image }) => {
 
     return (
         <div>
-            <Toolbar />
+            
             <div className={styles.main}>
                 <h1>{title}</h1>
                 {imageUrl && <img className={styles.mainImage} src={imageUrl} />}

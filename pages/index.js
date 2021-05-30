@@ -35,7 +35,7 @@ export default function Home({ posts }) {
 
   return (
     <div>
-      <Toolbar />
+      
        <div className={styles.main}></div>
 
        <h1 className={styles.title}>Pablo Hernández Contreras</h1>
