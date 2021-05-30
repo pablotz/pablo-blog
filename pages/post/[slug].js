@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react'
 import imageUrlBuilder from '@sanity/image-url'
 import styles from '../../styles/Post.module.css'
 import BlockContent from '@sanity/block-content-to-react'
-import Toolbar from '../../components/toolbar'
+
 
 
 export const Post = ({ title, body, image }) => {
