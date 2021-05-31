@@ -35,6 +35,11 @@ export default function Home({ posts }) {
 
   return (
     <div>
+
+          <MetaTags>
+            <title>Pablo Hernández Contreras</title>
+            <meta property="og:title" content="Pablo Hernández Contreras" />
+          </MetaTags>
       
        <div className={styles.main}></div>
 
