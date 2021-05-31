@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import imageUrlBuilder from '@sanity/image-url'
 import {useEffect, useState} from 'react'
 import {useRouter} from 'next/router'
+import MetaTags from 'react-meta-tags';
 
 export default function Home({ posts }) {
   const router = useRouter();
