@@ -16,6 +16,7 @@ export const Post = ({ title, body, image }) => {
         })
 
         setImageUrl(imgBuilder.image(image))
+        
     }, [image])
 
 
@@ -27,11 +28,15 @@ export const Post = ({ title, body, image }) => {
             <title>{title}</title>
             <meta property="og:title" content={title} />
             <meta property="og:image" content={imageUrl} />
+            <meta name="description" content={<BlockContent blocks={body} projectId="80gl8lcr" dataset="production" imageOptions={{w: 800, h: 600, fit: 'max'}} />} />
+            <meta property="og:description" content={body} />
+            <meta property="og:url" content={window.location.pathname + window.location.search}/>
           </MetaTags>
 
 
             <ProgressBar 
-            bgcolor="#2F67C2" />
+            bgcolor="#2F67C2"
+            height="15px" />
             <div className={styles.main}>
                 <h1>{title}</h1>
                 {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
