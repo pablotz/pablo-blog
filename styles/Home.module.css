@@ -1,26 +1,13 @@
-.feed {
-  display: grid;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px 
-}
 
 .post {
   margin: auto;
   margin-bottom: 120px;
-  width: 500px;
-  height: 316px;
   cursor: pointer;
-  text-align: center;
   max-width: calc(100vw - 50px);
-  padding-bottom: 30%;
 }
 
 .mainImage {
-  width: 500px;
+  width: 340px;
   transition: 0.2s;
   border-radius: 5px;
   max-width: calc(100vw - 50px);
@@ -28,7 +15,7 @@
 }
 
 .post:hover .mainImage{
-  width: 490px;
+  width: 380px;
   transition: 0.2s;
 }
 
@@ -38,17 +25,70 @@
 }
 
 .subTitle {
-  text-align: center;
-  font-size: 30px;
-
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: #014062;
 }
 
 .postTitle {
-  font-size: 30px;
+  font-size: 25px;
+  padding-top: 10px;
+  color: #014062;
 }
 
 .release {
-  font-size: 20px;
-  color: rgb(153, 153, 153);
+  font-size: 15px;
+  color: #01406270;
   margin-top: -20px ;
+}
+@media(max-width: 1366px){
+  .post{
+    margin-bottom: 65px;
+  }
+  .mainImage{
+    width: 300px;
+  }
+  .post:hover .mainImage{
+    width: 320px;
+    transition: 0.2s;
+  }
+  .postTitle{
+    font-size: 18px;
+  }
+  .release{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 768px){
+ 
+  .mainImage{
+    width: 250px;
+  }
+  .post:hover .mainImage{
+    width: 320px;
+    transition: 0.2s;
+  }
+  .postTitle{
+    font-size: 18px;
+  }
+  .release{
+    font-size: 15px;
+  }
+}
+@media(max-width: 720px){
+  
+  .mainImage{
+    width: 400px;
+  }
+  .postTitle{
+    font-size: 18px;
+  }
+  .release{
+    font-size: 15px;
+  }
+  .subTitle{
+    font-size: 30px;
+  }
 }
