@@ -2,8 +2,10 @@ import {useEffect, useState} from 'react'
 import imageUrlBuilder from '@sanity/image-url'
 import styles from '../../styles/Post.module.css'
 import BlockContent from '@sanity/block-content-to-react'
-import ProgressBar from "react-scroll-progress-bar";
 import MetaTags from 'react-meta-tags';
+import Navbar from '../../components/Navbar';
+import ScrollToTop from "react-scroll-to-top";
+import { FaCalendarAlt } from "react-icons/fa";
 
 export const Post = ({ title, body, image }) => {
     const [imageUrl, setImageUrl] = useState('');
@@ -32,14 +34,23 @@ export const Post = ({ title, body, image }) => {
             <meta property="og:description" content={body} />
             <meta property="og:url" content={window.location.pathname + window.location.search}/>
           </MetaTags>
+         
+            <ScrollToTop smooth />
+             <Navbar/> 
+             <section className={styles.bgBlog}>
+                 <div className="container text-center">
+                 {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
+                 
+                <small  class="form-text text-muted pt-5"><FaCalendarAlt /> 09/04/08</small>
+                 </div>
+             </section> 
+             <div className={styles.clearfix}></div>
+             
 
-
-            <ProgressBar 
-            bgcolor="#2F67C2"
-            height="15px" />
             <div className={styles.main}>
-                <h1>{title}</h1>
-                {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
+                <div className="text-center">
+                    <h1 className={styles.title}>{title}</h1>
+                </div>
                 
                 <div className={styles.body}>
                     <BlockContent 

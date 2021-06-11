@@ -1,20 +1,35 @@
 .main {
+    padding-top: 50px;
      margin: auto ;
      width: 1200px;
-     max-width: calc(100vw - 50px);
+     max-width: calc(70vw - 50px);
 }
 
 .mainImage {
-    width: 100%;
+    padding-top: 100px;
+    width: 80%;
 }
 
 .body p {
-    font-size: 24px;
+    
+    font-size: 17px;
     text-indent: 50px;
     line-height: 45px;
     text-align: justify;
     letter-spacing: 1px;
 }
+.bgBlog{
+    background-color: #1d3557;
+    opacity: 1;
+    background: linear-gradient(135deg, #E5E5F755 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #E5E5F7 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #E5E5F755 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #E5E5F7 25%, #1d3557 25%) 0px 0/ 80px 80px;
+   height: 500px;
+}
+
+.title {
+    color: #014062;
+    padding-bottom: 50px;
+  }
+
 
 
 

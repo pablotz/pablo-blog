@@ -7,8 +7,8 @@ import imageUrlBuilder from '@sanity/image-url'
 import {useEffect, useState} from 'react'
 import {useRouter} from 'next/router'
 import MetaTags from 'react-meta-tags';
-import { FaBars,FaHome, FaLinkedinIn, FaComment, FaTwitter , FaEnvelope } from "react-icons/fa";
 
+import Navbar from '../components/Navbar';
 
 
 
@@ -60,39 +60,11 @@ export default function Home({ posts }) {
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
           </head>
           <ScrollToTop smooth />
-          <header class="header">
-              <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-light bg-light">
-                <div className="container">
-                  <a class="navbar-brand" href="#">Hernandez Contreras</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto ">
-                          <li className="nav-item active">
-                            <a className="nav-link" href=""><FaHome/> Inicio</a>
-                          </li>
-                          <li className="nav-item">
-                            <a className="nav-link"  href=""><FaComment/> Blog</a>
-                          </li>
-                          <li className="nav-item ">
-                            <a className="nav-link linkedinIn"><FaLinkedinIn/></a>
-                          </li>
-                          <li className="nav-item">
-                            <a className="nav-link twitter"  href=""><FaTwitter/></a>
-                          </li>
-                          <li className="nav-item">
-                            <a className="nav-link mail"><FaEnvelope/></a>
-                          </li>
-                        </ul>
-                      </div>
-          
-                </div>
-              </nav>
-            </header>
+          <Navbar />
+         
 
           <section className="bg-color">
-          <div class="container text-center">
+          <div class="container text-center pt-5">
               <h1 class={styles.subTitle}>Publicaciones recientes</h1>
          </div>
           <div className="container">
