@@ -61,6 +61,25 @@ export default function Home({ posts }) {
           </head>
           <ScrollToTop smooth />
           <Navbar />
+
+          <section className={styles.bgSection}>
+              <div className="row">
+                <div className="col-lg-6 col-md-6 col-sm-12">
+                    <div className={styles.cardH}>
+                      <div className={styles.content}>
+                          <h6 className="text-white">¡Hola!</h6>
+                          <h3>Soy Hernandez Contreas</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+
+                    </div>
+                </div>
+                <div className="col-lg-6 col-md-6 col-sm-12 text-center ">
+                   <h1 className="text-white">Imagen</h1>
+                </div>
+            </div>
+          </section>
          
 
           <section className="bg-color">

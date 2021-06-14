@@ -26,8 +26,11 @@
 }
 
 .title {
-    color: #014062;
+    color: #1d3557!;
     padding-bottom: 50px;
+  }
+  .clearfix{
+      padding-top: 200px;
   }
 
 

@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div>
       <ProgressBar
-    bgcolor="#49fdd6"
+    bgcolor="#94a7c9"
     height="5px" />
     <nav className="navbar">
       
@@ -30,16 +30,16 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <a className="nav-links" onClick={handleClick}>
-            <i className="nav-link-icon"> <FaComment /></i>About</a>
+            <i className="nav-link-icon"> <FaComment /></i>Blog</a>
           </li>
           <li className="nav-item">
             <a className="nav-links"
               onClick={handleClick}>
-                 <i className="nav-link-icon"><FaFacebook /></i>Blog</a>
+                 <i className="nav-link-icon"><FaFacebook /></i>Facebook</a>
           </li>
           <li className="nav-item">
             <a className="nav-links"
-              onClick={handleClick}> <i className="nav-link-icon"><FaTwitter /></i> About</a>
+              onClick={handleClick}> <i className="nav-link-icon"><FaTwitter /></i> Twitter</a>
           </li>
         </ul>
         <div className="nav-icon" onClick={handleClick}>
